@@ -17,7 +17,7 @@ while True:
             print(f'a soma de {n1} e {n2} é: {soma}')
         elif calculadora == 'subtracao':
             subtracao = n1 - n2
-            print(f'a subtração de {n1} e {n2} é: {subitracao}')
+            print(f'a subtração de {n1} e {n2} é: {subtracao}')
         elif calculadora == 'multiplicacao':
             multiplicacao = n1 * n2
             print(f'a multiplicacao de {n1} e {n2} é: {multiplicacao}')
@@ -41,7 +41,7 @@ while True:
             print(f'a soma de {n1} e {n2} é: {soma}')
         elif calculadora == 'subtracao':
             subtracao = n1 - n2
-            print(f'a subtração de {n1} e {n2} é: {subitracao}')
+            print(f'a subtração de {n1} e {n2} é: {subtracao}')
         elif calculadora == 'multiplicacao':
             multiplicacao = n1 * n2
             print(f'a multiplicacao de {n1} e {n2} é: {multiplicacao}')
