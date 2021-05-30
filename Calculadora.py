@@ -1,3 +1,25 @@
+def calculos():
+    print(' soma (+) \n subtracao (-) \n multiplicacao (*) \n divisao (/) \n potencia (**)')
+
+    calculadora = input('Qual conta você deseja fazer? ')
+    if calculadora == 'soma' or calculadora == '+':
+        resultado = n1 + n2
+        print(f'a soma de {n1} e {n2} é: {resultado}')
+    elif calculadora == 'subtracao'or calculadora == '-':
+        resultado = n1 - n2
+        print(f'a subtração de {n1} e {n2} é: {resultado}')
+    elif calculadora == 'multiplicacao'or calculadora == '*':
+        resultado = n1 * n2
+        print(f'a multiplicacao de {n1} e {n2} é: {resultado}')
+    elif calculadora == 'divisao'or calculadora == '/':
+        resultado = n1 / n2
+        print(f'a divisao de {n1} e {n2} é: {resultado}')
+    else:
+        resultado = n1 ** n2
+        print(f'a potencia de {n1} e {n2} é: {resultado}')
+    
+    return resultado
+
 print('Calculadora em Python')
 
 while True:
@@ -8,48 +30,11 @@ while True:
     n2 = int(input('Qual é o segundo numero? '))
 
 
-    if estilo == 'inteiro':
-        print(' soma \n subtracao \n multiplicacao \n divisao \n potencia')
+    if estilo == 'inteiro'or estilo == 'int':
+        calculos()
 
-        calculadora = input('Qual conta você deseja fazer? ')
-        if calculadora == 'soma':
-            soma = n1 + n2
-            print(f'a soma de {n1} e {n2} é: {soma}')
-        elif calculadora == 'subtracao':
-            subtracao = n1 - n2
-            print(f'a subtração de {n1} e {n2} é: {subtracao}')
-        elif calculadora == 'multiplicacao':
-            multiplicacao = n1 * n2
-            print(f'a multiplicacao de {n1} e {n2} é: {multiplicacao}')
-        elif calculadora == 'divisao':
-            divisao = n1 / n2
-            print(f'a divisao de {n1} e {n2} é: {divisao}')
-        else:
-            potencia = n1 ** n2
-            print(f'a potencia de {n1} e {n2} é: {potencia}')
-
-    elif estilo == 'quebrados':
-        print(' soma \n subtracao \n multiplicacao \n divisao \n potencia')
-
-        calculadora = input('Qual conta você deseja fazer? ')
-
-        if calculadora == 'soma':
-            soma = n1 + n2
-            print(f'a soma de {n1} e {n2} é: {soma}')
-        elif calculadora == 'subtracao':
-            subtracao = n1 - n2
-            print(f'a subtração de {n1} e {n2} é: {subtracao}')
-        elif calculadora == 'multiplicacao':
-            multiplicacao = n1 * n2
-            print(f'a multiplicacao de {n1} e {n2} é: {multiplicacao}')
-        elif calculadora == 'divisao':
-            divisao = n1 / n2
-            print(f'a divisao de {n1} e {n2} é: {divisao}')
-        else:
-            potencia = n1 ** n2
-            print(f'a potencia de {n1} e {n2} é: {potencia}')
-    else:
-        print('Escolha entre os numeros inteiros ou quebrados... \n')
+    elif estilo == 'quebrados'or estilo == 'float':
+        calculos()
 
     denovo = input('Deseja calcular novamente? S/N \n').upper()
 
